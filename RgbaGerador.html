@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="RgbaGerador.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="sliders">
+            <label> red </label>
+            <input type="range" min="0" max="255" value="0" oninput="getValue()" id="red">
+
+            <label> green </label>
+            <input type="range" min="0" max="255" value="0" oninput="getValue()" id="green">
+
+            <label> blue </label>
+            <input type="range" min="0" max="255" value="0" oninput="getValue()" id="blue">
+
+            <label> alpha </label>
+            <input type="range" min="0.1" max="1.0" step="0.1" value="1" oninput="getValue()" id="alpha">
+
+            <div class="output-box">
+                <div class="output">rgba(0,0,0,1)</div>
+                <div class="copyBtn" onclick="copy()"><i class="fa fa-clone" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="RgbaGerador.js"></script>
+
+</body>
+</html>
